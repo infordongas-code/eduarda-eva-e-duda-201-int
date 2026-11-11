@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto de Vida | Enfermagem & Policial Militar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <h1>Projeto de Vida</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#projetos">Projetos de Vida</a></li>
+                    <li><a href="#comparativo">Comparativo</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h2>Transformando Metas em Realidade</h2>
+            <p>Conheça a trajetória, os objetivos e o planejamento de futuro para duas carreiras de grande impacto social.</p>
+        </div>
+    </section>
+
+    <section id="projetos" class="container">
+        <h2 class="section-title">Carreiras em Destaque</h2>
+        <div class="cards-grid">
+            <!-- Card 1: Enfermagem -->
+            <div class="card enfermeira">
+                <div class="card-header">
+                    <h3>Mariana Silva</h3>
+                    <span class="badge">Enfermagem</span>
+                </div>
+                <div class="card-body">
+                    <h4>Visão de Futuro</h4>
+                    <p>Dedicada a cuidar da saúde e bem-estar comunitário com empatia e excelência técnica.</p>
+                    
+                    <h4>Plano de Ação</h4>
+                    <ul>
+                        <li>Graduação em Enfermagem</li>
+                        <li>Especialização em UTI Neonatal</li>
+                        <li>Atuação em Hospitais Públicos</li>
+                    </ul>
+
+                    <button class="btn" onclick="mostrarDetalhes('enfermagem')">Ver Mais Detalhes</button>
+                    <div id="detalhes-enfermagem" class="detalhes hidden">
+                        <p><strong>Metas de Curto Prazo:</strong> Estágio supervisionado e aprovação no COREN.</p>
+                        <p><strong>Metas de Longo Prazo:</strong> Gestão de equipe de enfermagem hospitalar.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Policial Militar -->
+            <div class="card policial">
+                <div class="card-header">
+                    <h3>Lucas Oliveira</h3>
+                    <span class="badge badge-pm">Policial Militar</span>
+                </div>
+                <div class="card-body">
+                    <h4>Visão de Futuro</h4>
+                    <p>Comprometido com a segurança pública, a justiça e a proteção da comunidade.</p>
+                    
+                    <h4>Plano de Ação</h4>
+                    <ul>
+                        <li>Preparação física e teórica contínua</li>
+                        <li>Aprovação no Concurso da PM</li>
+                        <li>Formação no Curso de Formação de Praças</li>
+                    </ul>
+
+                    <button class="btn btn-pm" onclick="mostrarDetalhes('policial')">Ver Mais Detalhes</button>
+                    <div id="detalhes-policial" class="detalhes hidden">
+                        <p><strong>Metas de Curto Prazo:</strong> Treinamento de TAF e estudo de Legislação.</p>
+                        <p><strong>Metas de Longo Prazo:</strong> Ingresso no Batalhão de Operações Especiais e progressão de carreira.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="comparativo" class="container section-margin">
+        <h2 class="section-title">Valores e Propósitos Em Comum</h2>
+        <div class="proposito-box">
+            <p>Embora atuem em áreas distintas, ambos os projetos de vida compartilham a essência de <strong>servir à sociedade</strong>, demonstrando disciplina, empatia, coragem e compromisso social no dia a dia.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Projeto de Vida - Desenvolvido para estudos e planejamento de carreira.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
